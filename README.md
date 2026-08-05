@@ -1,4 +1,4 @@
-# HTML Index pages and associated CSS style pages.
+# HTML Index pages, Blog and associated CSS style pages.
 
 This website was built in a classic web format employing static HTML
 pages built with the help of OpenAi ChatGPT 4.5 in suggesting ideas
