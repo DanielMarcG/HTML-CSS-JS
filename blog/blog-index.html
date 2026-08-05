@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Technology & Research Initiative</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/icons8-search-in-browser-windows-11-color-96.png">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div id="header"></div>
+<script>
+fetch("../header.html")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById("header").innerHTML = html;
+  });
+</script>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#services">Services</a>
+    <a href="../index.html#research">Research</a>
+    <a href="../index.html#news">News</a>
+    <a href="../index.html#events">Events</a>
+    <a href="../index.html#partners">Partners</a>
+    <a href="../index.html#contact">Contact</a>
+    <a href="../index.html#blog" class="button-link active">Blog</a>
+</nav>
+
+<main>
+
+<section id="blog">
+    <h2>✍ Blog</h2>
+    <p>
+<ul>
+  <li><a href="posts/technology-labyrinths.html">May 2025 - Technology Labyrinths</a></li>
+  <li><a href="posts/state-of-the-internet.html">June 2025 - State of the Internet</a></li>
+  <li><a href="posts/application-or-bust.html">June 2025 - Application or Bust?</a></li>
+  <li><a href="posts/tiny-llama-1p1B.html">July 2025 - Tiny Llama 1.1B</a></li>
+</ul>
+    </p>
+    <p>
+    <br>
+
+    </p>
+</section>
+
+
+
+
+
+<section id="legal">
+    <h2>⚖ Legal Information</h2>
+
+```
+<p>
+    This website is operated by a not-for-profit advanced technological corporation. All content is
+    provided for informational purposes unless otherwise stated.
+</p>
+```
+
+</section>
+
+</main>
+
+<div id="footer"></div>
+<script>
+fetch("../footer.html")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById("footer").innerHTML = html;
+  });
+</script>
+   
+
+</body>
+</html>
