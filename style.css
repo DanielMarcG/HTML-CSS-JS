@@ -233,6 +233,26 @@ apresFooter {
 }
 }
 
+#terminal {
+    width: 700px;
+    height: 250px;
+    margin: 30px auto;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+    background: #101010;
+    color: #f0f0f0;
+
+    font-family: monospace;
+    font-size: 14px;
+
+    border: 1px solid #606060;
+    border-radius: 6px;
+
+    overflow-y: auto;
+}
+
 /*
 nav a {
     display: block;
