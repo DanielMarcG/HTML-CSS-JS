@@ -41,9 +41,9 @@ command.addEventListener("keydown", function(event) {
             output.appendChild(error);
             const commands = document.createElement("div");
             commands.textContent = `List of Commands:
-                - color
-                - background
-                - font-size`;
+                - "color"
+                - "background"
+                - "font-size"`;
             output.appendChild(commands);
         }
 
