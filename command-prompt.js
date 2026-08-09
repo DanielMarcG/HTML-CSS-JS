@@ -4,14 +4,14 @@ const output = document.getElementById("terminal-output");
 command.addEventListener("keydown", function(event) {
 
     if (event.key !== "Enter") return;
-    const input = command.value.trim();
-    if (!input) return;
+        const input = command.value.trim();
+        if (!input) return;
 
     const parts = input.split(" ");
     const cmd = parts[0];
     const value = parts.slice(1).join(" ");
 
-        if (event.key !== "Enter") return;
+    if (event.key !== "Enter") return;
 
     const line = document.createElement("div");
     line.textContent = `> ${input}`;
