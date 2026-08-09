@@ -37,13 +37,15 @@ command.addEventListener("keydown", function(event) {
 
         default:
             const error = document.createElement("div");
-            error.textContent = `Unknown command: ${cmd}
-            List of Commands:
-            - color
-            - background
-            - font-size`;
+            error.textContent = `Unknown command: ${cmd}`;
             output.appendChild(error);
-    }
+            const commands = document.createElement("div");
+            commands.textContent = `List of Commands:
+                - color
+                - background
+                - font-size`;
+            output.appendChild(commands);
+        }
 
     // Clear input
     command.value = "";
