@@ -8,6 +8,13 @@ command.addEventListener("keydown", function(event) {
     const cmd = parts[0];
     const value = parts.slice(1).join(" ");
 
+        if (event.key !== "Enter") return;
+
+    const line = document.createElement("div");
+    line.textContent = `> ${input}`;
+    output.appendChild(line);
+    command.value = "";
+
     output.innerHTML += `<div>&gt; ${input}</div>`;
     switch (cmd) {
         case "color":
