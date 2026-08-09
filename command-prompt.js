@@ -1,4 +1,3 @@
-```javascript
 const command = document.getElementById("command");
 const output = document.getElementById("terminal-output");
 
@@ -45,4 +44,3 @@ command.addEventListener("keydown", function(event) {
     // Clear input
     command.value = "";
 });
-```
