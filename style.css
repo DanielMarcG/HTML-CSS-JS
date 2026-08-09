@@ -253,6 +253,19 @@ apresFooter {
     overflow-y: auto;
 }
 
+#command {
+    background-color: #303030;
+    color: #d8d8d8;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    outline: none;
+}
+
+#command:focus {
+    border-color: #606060;
+    box-shadow: 0 0 3px rgba(150, 150, 150, 0.25);
+}
+
 /*
 nav a {
     display: block;
