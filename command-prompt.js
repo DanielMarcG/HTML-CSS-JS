@@ -55,9 +55,9 @@ command.addEventListener("keydown", function(event) {
     // Clear input
     command.value = "";
     display.textContent = "";
+    });
 
     // Keep the terminal ready for typing
 document.getElementById("terminal").addEventListener("click", function () {
     command.focus();
-});
 });
