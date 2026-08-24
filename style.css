@@ -246,6 +246,7 @@ apresFooter {
 
     font-family: monospace;
     font-size: 14px;
+    line-height: 1.2;
 
     border: 1px solid #606060;
     border-radius: 6px;
@@ -253,28 +254,38 @@ apresFooter {
     overflow-y: auto;
 }
 
-/* Terminal prompt and input line */
+
+/* Terminal input line */
 #terminal-input {
     display: flex;
-    align-items: left;
+    align-items: baseline;
+
+    width: 100%;
 }
 
+
+/* > prompt */
 #terminal-input .prompt {
     margin-right: 8px;
 }
 
-/* Container holding the invisible input and visible text */
+
+/* Text + cursor container */
 .command-line {
     position: relative;
-    display: inline-block;
+
+    display: inline;
 
     font-family: monospace;
     font-size: 14px;
+    line-height: 1.2;
 
     white-space: pre;
 }
 
-/* Actual input -- receives keyboard input but is invisible */
+
+/* The actual input receives keyboard input,
+   but isn't visually displayed */
 #command {
     position: absolute;
 
@@ -286,20 +297,28 @@ apresFooter {
 
     opacity: 0;
 
-    background: transparent;
     border: none;
     outline: none;
+
+    background: transparent;
 
     color: transparent;
     caret-color: transparent;
 }
 
-/* Visible command text */
+
+/* Text typed by the user */
 #command-display {
+    display: inline;
+
+    font-family: monospace;
+    font-size: 14px;
+
     white-space: pre;
 }
 
-/* Old-school terminal block cursor */
+
+/* Old-school block cursor */
 .cursor {
     display: inline-block;
 
@@ -310,12 +329,13 @@ apresFooter {
 
     background: currentColor;
 
-    vertical-align: baseline;
+    vertical-align: -0.15em;
 
     animation: terminal-blink 1s steps(1) infinite;
 }
 
-/* Cursor blinking */
+
+/* Blinking cursor */
 @keyframes terminal-blink {
     0%, 50% {
         opacity: 1;
