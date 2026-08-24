@@ -256,7 +256,7 @@ apresFooter {
 /* Terminal prompt and input line */
 #terminal-input {
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 
 #terminal-input .prompt {
