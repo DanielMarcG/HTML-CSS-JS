@@ -233,109 +233,82 @@ apresFooter {
 }
 }
 
-#terminal {
-    width: 700px;
-    height: 250px;
-    margin: 30px auto;
-
-    padding: 15px;
-    box-sizing: border-box;
-
-    background: #101010;
-    color: #f0f0f0;
-
-    font-family: monospace;
-    font-size: 14px;
-    line-height: 1.2;
-
-    border: 1px solid #606060;
-    border-radius: 6px;
-
-    overflow-y: auto;
-}
-
-
-/* Terminal input line */
 #terminal-input {
     display: flex;
-    align-items: baseline;
-
+    align-items: center;
     width: 100%;
+    height: 17px;
+    line-height: 17px;
 }
 
-
-/* > prompt */
 #terminal-input .prompt {
+    display: inline-block;
     margin-right: 8px;
+    line-height: 17px;
 }
 
-
-/* Text + cursor container */
 .command-line {
     position: relative;
 
-    display: inline;
+    display: inline-flex;
+    align-items: center;
+
+    height: 17px;
 
     font-family: monospace;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 17px;
 
     white-space: pre;
 }
 
-
-/* The actual input receives keyboard input,
-   but isn't visually displayed */
+/* Hidden keyboard input */
 #command {
     position: absolute;
 
     left: 0;
     top: 0;
 
-    width: 100%;
-    height: 100%;
+    width: 1px;
+    height: 1px;
 
     opacity: 0;
 
     border: none;
     outline: none;
+    padding: 0;
+    margin: 0;
 
-    background: transparent;
-
-    color: transparent;
-    caret-color: transparent;
+    pointer-events: none;
 }
 
-
-/* Text typed by the user */
+/* Visible typed text */
 #command-display {
-    display: inline;
+    display: inline-block;
 
     font-family: monospace;
     font-size: 14px;
+    line-height: 17px;
 
     white-space: pre;
 }
-
 
 /* Old-school block cursor */
 .cursor {
     display: inline-block;
 
-    width: 0.6em;
-    height: 1em;
+    width: 8px;
+    height: 14px;
 
     margin-left: 1px;
 
     background: currentColor;
 
-    vertical-align: -0.15em;
+    flex-shrink: 0;
 
     animation: terminal-blink 1s steps(1) infinite;
 }
 
-
-/* Blinking cursor */
 @keyframes terminal-blink {
     0%, 50% {
         opacity: 1;
