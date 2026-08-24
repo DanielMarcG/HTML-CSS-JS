@@ -1,5 +1,10 @@
 const command = document.getElementById("command");
 const output = document.getElementById("terminal-output");
+const display = document.getElementById("command-display");
+
+command.addEventListener("input", function () {
+    display.textContent = command.value;
+});
 
 command.addEventListener("keydown", function(event) {
 
@@ -49,4 +54,10 @@ command.addEventListener("keydown", function(event) {
 
     // Clear input
     command.value = "";
+    display.textContent = "";
+
+    // Keep the terminal ready for typing
+document.getElementById("terminal").addEventListener("click", function () {
+    command.focus();
+});
 });
