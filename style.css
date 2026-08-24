@@ -310,7 +310,7 @@ apresFooter {
 
     background: currentColor;
 
-    vertical-align: -0.15em;
+    vertical-align: baseline;
 
     animation: terminal-blink 1s steps(1) infinite;
 }
