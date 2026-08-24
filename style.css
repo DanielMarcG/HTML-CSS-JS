@@ -245,7 +245,7 @@ apresFooter {
     color: #f0f0f0;
 
     font-family: monospace;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
 
     border: 1px solid #606060;
@@ -299,7 +299,7 @@ apresFooter {
     background-color: transparent;
 
     font-family: monospace;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17px;
 
     white-space: pre;
@@ -337,7 +337,7 @@ apresFooter {
     background-color: transparent;
 
     font-family: monospace;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17px;
 
     white-space: pre;
