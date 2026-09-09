@@ -48,7 +48,10 @@ command.addEventListener("keydown", function(event) {
             commands.textContent = `List of Commands:
                 - "color"
                 - "background"
-                - "font-size"`;
+                - "font-face"
+                - "java"
+                - "border"
+                - "font-values"`;
             output.appendChild(commands);
         }
 
