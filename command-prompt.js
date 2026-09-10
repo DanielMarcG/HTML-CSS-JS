@@ -52,7 +52,7 @@ command.addEventListener("keydown", function(event) {
 		output.innerHTML += "Extracting espresso...<br>";
 	  }, 2000);
 	  setTimeout(() => {
-		output.innerHTML += value+ "ready!...<br>";
+		output.innerHTML += "☕ " +value+ "ready!...<br>";
 	  }, 3000);
             break;
 
