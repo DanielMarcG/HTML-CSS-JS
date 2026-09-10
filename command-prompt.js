@@ -36,7 +36,19 @@ command.addEventListener("keydown", function(event) {
             document.body.style.backgroundColor = value;
             break;
 
-        case "font-size":
+        case "font-face":
+            document.body.style.fontFamily = value;
+            break;
+
+	case "java":
+            document.body.style.backgroundColor = value;
+            break;
+
+	case "border":
+            document.body.style.border = value;
+            break;
+
+	case "font-values":
             document.body.style.fontSize = value;
             break;
 
