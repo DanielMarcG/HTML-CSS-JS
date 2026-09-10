@@ -61,8 +61,8 @@ command.addEventListener("keydown", function(event) {
             break;
 
 	case "font-values":
-	  const size = value.split(" ")[1]
-	  document.body.style.fontSize = size + "px";
+	  //const size = value.split(" ")[1]
+	  document.body.style.fontSize = value + "px";
             break;
 
         default:
