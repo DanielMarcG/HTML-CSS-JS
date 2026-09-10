@@ -44,16 +44,16 @@ command.addEventListener("keydown", function(event) {
             output.innerHTML = "";
 	  setTimeout(() => {
 		output.innerHTML += "Grinding beans...<br>";
-	  }, 500);
+	  }, 1500);
 	  setTimeout(() => {
 		output.innerHTML += "Heating water...<br>";
-	  }, 1200);
+	  }, 3000);
 	  setTimeout(() => {
 		output.innerHTML += "Extracting espresso...<br>";
-	  }, 2000);
+	  }, 4500);
 	  setTimeout(() => {
 		output.innerHTML += "☕ " +value+ " ready... Enjoy!<br>";
-	  }, 3000);
+	  }, 6000);
             break;
 
 	case "border":
