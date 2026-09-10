@@ -40,8 +40,20 @@ command.addEventListener("keydown", function(event) {
             document.body.style.fontFamily = value;
             break;
 
-	case "java":
-            document.body.style.backgroundColor = value;
+	case "java-brew":
+            output.innerHTML = "";
+	  setTimeout(() => {
+		output.innerHTML += "Grinding beans...<br>";
+	  }, 500);
+	  setTimeout(() => {
+		output.innerHTML += "Heating water...<br>";
+	  }, 1200);
+	  setTimeout(() => {
+		output.innerHTML += "Extracting espresso...<br>";
+	  }, 2000);
+	  setTimeout(() => {
+		output.innerHTML += value+ "ready!...<br>";
+	  }, 3000);
             break;
 
 	case "border":
@@ -62,7 +74,7 @@ command.addEventListener("keydown", function(event) {
                 - "color"
                 - "background"
                 - "font-face"
-                - "java"
+                - "java-brew"
                 - "border"
                 - "font-values"`;
             output.appendChild(commands);
