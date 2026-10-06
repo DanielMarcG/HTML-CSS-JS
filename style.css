@@ -1,4 +1,4 @@
-```css
+
 /* # is used for "id" tags
    . is used for "class" selectors
 */
@@ -13,11 +13,9 @@ body {
     background-size: 30px 30px;
 }
 
-
 /* ========================================
    Advertising Banner
    ======================================== */
-
 .advertising-banner {
     display: flex;
 
@@ -64,11 +62,9 @@ body {
     border-color: #ff00ff;
 }
 
-
 /* ========================================
    Header
    ======================================== */
-
 header {
     display: flex;
     align-items: center;
@@ -85,30 +81,29 @@ header {
     height: 150px;
 }
 
-.header-right {
-    width: 33%;
-    flex-shrink: 0;
-}
-
 .header-left img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.header-center {
-    text-align: center;
+.header-right {
+    width: 33%;
+    flex-shrink: 0;
 }
 
-.header-center h1 {
-    margin: 0;
-    color: white;
+.header-center {
+    text-align: center;
 }
 
 header h1 {
     color: #00ffff;
     text-shadow: 2px 2px #ff00ff;
     margin-bottom: 10px;
+}
+
+header h2 {
+	font-size: 15px;
 }
 
 marquee {
@@ -225,11 +220,9 @@ h1 {
 
 h2 {
     color: rgb(0, 255, 255);
-
+    font-size: 20px;
     padding-bottom: 5px;
-
     border-bottom: 1px dashed rgb(0, 255, 255);
-
     margin: 5px 0;
 }
 
