@@ -6,7 +6,6 @@
 /* ========================================
    Basic Typography
    ======================================== */
-   
 body {
     margin: 0;
     color: #ffffff;
@@ -54,55 +53,6 @@ ul {
 }
 
 /* ========================================
-   Advertising Banner
-   ======================================== */
-.advertising-banner {
-    display: flex;
-
-    width: 728px;
-    height: 90px;
-    max-width: 100%;
-    box-sizing: border-box;
-
-    margin: 0 0 10px 0;
-    padding: 10px;
-
-    background: #111827;
-    border: 2px solid #00ffff;
-
-    text-align: center;
-}
-
-.advertising-link {
-    display: flex;
-
-    width: 728px;
-    height: 90px;
-    max-width: 100%;
-
-    margin: 0 auto;
-    box-sizing: border-box;
-
-    justify-content: center;
-    align-items: center;
-
-    background: #1b1b2f;
-    border: 1px solid #00ffff;
-
-    color: #00ffff;
-    text-decoration: none;
-
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.advertising-link:hover {
-    color: #ffffff;
-    background: #252545;
-    border-color: #ff00ff;
-}
-
-/* ========================================
    Header
    ======================================== */
 header {
@@ -147,6 +97,55 @@ marquee {
     font-weight: bold;
 }
 
+
+/* ========================================
+   Advertising Banner
+   ======================================== */
+.advertising-banner {
+    display: flex;
+
+    width: 728px;
+    height: 120px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin: 0 0 10px 0;
+    padding: 10px;
+
+    background: #111827;
+    border: 2px solid #00ffff;
+
+    text-align: center;
+}
+
+.advertising-link {
+    display: flex;
+
+    width: 728px;
+    /*height: 90px; */
+    max-width: 100%;
+
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #1b1b2f;
+    border: 1px solid #00ffff;
+
+    color: #00ffff;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.advertising-link:hover {
+    color: #ffffff;
+    background: #252545;
+    border-color: #ff00ff;
+}
 
 /* ========================================
    Navigation
