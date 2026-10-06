@@ -3,14 +3,54 @@
    . is used for "class" selectors
 */
 
+/* ========================================
+   Basic Typography
+   ======================================== */
+   
 body {
     margin: 0;
+    color: #ffffff;
+    font-size: 15px;
     font-family: "Verdana", sans-serif;
     background: #000022;
-    color: #ffffff;
     background-image:
         radial-gradient(white 1px, transparent 1px);
     background-size: 30px 30px;
+}
+
+p {
+	margin: 0 0 0 0;
+	
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+section {
+    background: #111133;
+    border: 3px ridge #00ffff;
+
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+h1 {
+    animation: blink 2.5s infinite;
+}
+
+h2 {
+    color: rgb(0, 255, 255);
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed rgb(0, 255, 255);
+    margin: 5px 0;
+}
+
+ul {
+    line-height: 1.8;
 }
 
 /* ========================================
@@ -102,10 +142,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-header h2 {
-	font-size: 15px;
-}
-
 marquee {
     color: yellow;
     font-weight: bold;
@@ -191,46 +227,9 @@ nav a.button-link.active {
     transform: translate(1px, 1px);
 }
 
-
-/* ========================================
-   General Content
-   ======================================== */
-
-ul {
-    line-height: 1.8;
-}
-
-main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 10px;
-}
-
-section {
-    background: #111133;
-    border: 3px ridge #00ffff;
-
-    margin-bottom: 20px;
-    padding: 15px;
-}
-
-h1 {
-    animation: blink 2.5s infinite;
-}
-
-h2 {
-    color: rgb(0, 255, 255);
-    font-size: 20px;
-    padding-bottom: 5px;
-    border-bottom: 1px dashed rgb(0, 255, 255);
-    margin: 5px 0;
-}
-
-
 /* ========================================
    Blog
    ======================================== */
-
 #blog {
     line-height: 1.5;
     font-size: 14px;
