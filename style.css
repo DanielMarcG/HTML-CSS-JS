@@ -37,6 +37,7 @@ section {
 }
 #services {
 	display: inline-block;
+	vertical-align: top;
 }
 
 h1 {
