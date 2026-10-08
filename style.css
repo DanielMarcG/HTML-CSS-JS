@@ -162,7 +162,7 @@ marquee {
    ======================================== */
 
 nav {
-    text-align: center;
+    /* text-align: center; */
     background: #111144;
     padding: 12px;
     padding-left: 25%;
