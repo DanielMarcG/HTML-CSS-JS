@@ -37,7 +37,11 @@ section {
 }
 #services {
 	display: inline-block;
+	
+}
+#rss {
 	vertical-align: top;
+	margin-left: 50px;
 }
 
 h1 {
