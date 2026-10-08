@@ -40,8 +40,10 @@ section {
 	
 }
 #rss {
+    width: 33%;
+    flex-shrink: 0;
 	vertical-align: top;
-	margin-left: 50px;
+	margin-left: 250px;
 }
 
 h1 {
